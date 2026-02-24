@@ -33,6 +33,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-utils/
-public/
-lib/
+/utils/
+/public/
+/node_modules/
+/lib/
