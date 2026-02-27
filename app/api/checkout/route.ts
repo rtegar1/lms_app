@@ -7,7 +7,7 @@ export async function POST(req: Request) {
     const { userId } = await auth();
     const body = await req.json();
     const { courseId, price } = body;
-
+    
     // Inisialisasi Admin Client (Bypass RLS)
     const supabaseAdmin = createClient(
       process.env.NEXT_PUBLIC_SUPABASE_URL!,
