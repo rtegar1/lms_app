@@ -32,14 +32,12 @@ export const UserButtonCustom = ({ role: initialRole }: UserButtonCustomProps) =
       }}
     >
       <UserButton.MenuItems>
-        {/* Link umum untuk semua student */}
-        {role === 'student' && (
+        {/* Link ini sekarang muncul untuk semua role (Admin, Instructor, Student) */}
         <UserButton.Link
-          label="My Dashboard"
+          label="My Courses"
           labelIcon={<LayoutDashboard className="h-4 w-4" />}
-          href="/student/dashboard"
+          href="/dashboard"
         />
-        )}
 
         {/* Muncul jika role adalah instructor */}
         {role === 'instructor' && (
